@@ -1,4 +1,4 @@
-![Fluffy Buttermilk Pancakes](img/pancake.jpg)
+![Fluffy Buttermilk Pancakes](image/pancake.jpg)
 
 # Buttermilk Pancakes
 
