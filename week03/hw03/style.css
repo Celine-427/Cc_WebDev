@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+    background-color: rgb(218, 174, 218);
+}
+
+body {
+font-family: cursive;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: rgb(216, 144, 227);
+}
+
+header h1{
+    text-align: center;
+    color: rgb(121, 69, 201);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+nav#main-nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(124, 49, 171);
+}
+
+nav#main-nav ul li{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+nav#main-nav ul li a {
+    display: block;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(206, 86, 198);
+  }
+
+li a:hover {
+    background-color: rgb(99, 124, 137);
+    color: #fff;    
+}
+
+.top_part {
+    background-color: rgb(170, 105, 166);
+}
+
+article h2 {
+    text-align: center;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+}
+
+figure figcaption {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.cake_description {
+    display: block;
+    margin-bottom: 25px;
+    padding: 10px
+}
+
+.cake_ingredients {
+    padding: 30px;
+    margin-left: 20px;
+}
+
+
+.cake_procedure {
+    padding: 30px;
+    margin-left: 20px;
+}
+
+aside {
+    background-color:rgb(218, 174, 218);
+    padding: 30px;
+    margin-left: 20px;
+  }
+
+.foot {
+    padding: 20px;
+    display: inline-block;
+    background-color: rgb(172, 114, 190);
+    padding-bottom: 30px;
+}
+
+
+.media {
+    display: block;
+    padding:20px;
+}
