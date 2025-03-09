@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei', sans-serif;
+  }
+  
+  
+  body {
+    background-color: #f8eee7; 
+    color: #5d4235; 
+    line-height: 1.6;
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcd9e5; 
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.5rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #5d4235;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #5d4235;
+    font-weight: 500;
+    margin: 1rem;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid #5d4235;
+  }
+  
+  
+  nav a:hover {
+    color: #c495a0;
+    transition: color 0.3s ease;
+  }
+  
+  
+  main {
+    padding: 2rem;
+  }
+  
+  
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #f2c7d5; 
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #5d4235;
+  }
+  
+ .search-bar button:hover{
+  background-color:#e7a9bb
+ }
+  
+  
+  .home-container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 2rem;
+  }
+  
+  .home-image img {
+    width: 100%;
+    max-width: 500px; 
+    border-radius: 10px;
+    margin: 2rem;
+  }
+  
+  .home-text {
+    flex: 1; 
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .home-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .pet-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .info-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .info-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .info-card button {
+    background-color: #f2c7d5;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #5d4235;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .info-card button:hover {
+    background-color: #e7a9bb;
+  }
+  
+  .breeds-container {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+  .breed-card {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 1rem;
+    transition: all 0.3s ease; 
+    margin: 2.5rem;
+  }
+  
+  .breed-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .breed-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .care-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .care-section img {
+    max-width: 400px;
+    max-height: 600px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .care-text {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .about-images img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .contact-info {
+    margin: 1rem;
+  }
+  
+  
+  footer {
+    background-color: #fcd9e5;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer p {
+    color: #5d4235;
+    font-size: 0.9rem;
+  }
+  
+  .social-media a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #5d4235;
+  }
+  
+  .social-media a:hover {
+    color: #c495a0;
+    transition: color 0.3s;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-images {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  
+  
