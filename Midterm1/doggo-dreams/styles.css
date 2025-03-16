@@ -132,7 +132,7 @@
     width: 280px;
     text-align: center;
     padding: 1rem;
-    transition: all 0.3s ease;
+    transition: all 1s ease; 
   }
   
   .info-card img {
@@ -169,12 +169,12 @@
     border-radius: 10px;
     width: 300px;
     padding: 1rem;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;  
     margin: 2.5rem;
-  }
+  } 
   
   .breed-card:hover {
-    transform: scale(1.05);
+     transform: scale(1.05); 
   }
   
   .breed-card img {
