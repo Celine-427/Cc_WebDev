@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grade Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        width: 100%;
+      }
+
+      .grade-weight-container, 
+      .result-container {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .form-floating {
+        flex: 1;
+      }
+
+      .grade-weight-container p {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .result-container p {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById('calcBtn').addEventListener('click', () => {
+          let finalGrade = calculateGrade()
+          let letterGrade = getLetterGrade(finalGrade)
+          finalGrade = Math.round(finalGrade * 100) / 100;
+          let insertNum = document.getElementById('insertNumLoc')
+          let insertLetter = document.getElementById('insertLetterLoc')
+          insertNum.innerHTML = `<p>Your Final Grade: ${finalGrade}%</p>`
+          insertLetter.innerHTML = `<p>Your Letter Grade: ${letterGrade}</p>`
+          
+        });
+      });
+
+      const getLetterGrade = (percentage) => {
+        if (percentage >= 90) {
+          return 'A'
+        } else if (percentage >= 80) {
+          return 'B'
+        } else if (percentage >= 70) {
+          return 'C'
+        } else if (percentage >= 60) {
+          return 'D'
+        } else {
+          return 'F'
+        }
+      }
+
+      const calculateGrade = () => {
+        // Get all grade values with default 0 for empty or NaN values
+        const ag = parseFloat(document.getElementById('assignment_average').value)
+        const aw = parseFloat(document.getElementById('assignment_weight').value) / 100
+        const qg = parseFloat(document.getElementById('quiz_average').value)
+        const qw = parseFloat(document.getElementById('quiz_weight').value) / 100
+        const m1g = parseFloat(document.getElementById('midterm1').value) 
+        const m1w = parseFloat(document.getElementById('midterm1_weight').value) / 100
+        const m2g = parseFloat(document.getElementById('midterm2').value) 
+        const m2w = parseFloat(document.getElementById('midterm2_weight').value) / 100
+        const fg = parseFloat(document.getElementById('final_exam').value)
+        const fw = parseFloat(document.getElementById('final_exam_weight').value) / 100
+
+        const finalGrade = (ag * aw) + (qg * qw) + (m1g * m1w) + (m2g * m2w) + (fg * fw);
+        return finalGrade
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grade Calculator</h1>
+      <form id="userInfo" class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+        <div class="grade-weight-container">
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="assignment_average"
+              name="assignment_average"
+              placeholder="Assignment Average"
+              required
+            />
+            <label for="assignment_average">Assignment Average (%)</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="assignment_weight"
+              name="assignment_weight"
+              placeholder="Weight"
+              required
+            />
+            <label for="assignment_weight">Weight (%)</label>
+          </div>
+        </div>
+
+        <div class="grade-weight-container">
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="quiz_average"
+              name="quiz_average"
+              placeholder="Quiz Average"
+              required
+            />
+            <label for="quiz_average">Quiz Average (%)</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="quiz_weight"
+              name="quiz_weight"
+              placeholder="Weight"
+              required
+            />
+            <label for="quiz_weight">Weight (%)</label>
+          </div>
+        </div>
+        
+        <div class="grade-weight-container">
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="midterm1"
+              name="midterm1"
+              placeholder="Midterm 1 Grade(%)"
+              required
+            />
+            <label for="midterm1">Midterm 1 Grade(%)</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="midterm1_weight"
+              name="midterm1_weight"
+              placeholder="Weight"
+              required
+            />
+            <label for="midterm1_weight">Weight (%)</label>
+          </div>
+        </div>
+        
+        <div class="grade-weight-container">
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="midterm2"
+              name="midterm2"
+              placeholder="Midterm 2 Grade(%)"
+              required
+            />
+            <label for="midterm2">Midterm 2 Grade(%)</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="midterm2_weight"
+              name="midterm2_weight"
+              placeholder="Weight"
+              required
+            />
+            <label for="midterm2_weight">Weight (%)</label>
+          </div>
+        </div>
+
+        <div class="grade-weight-container">
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="final_exam"
+              name="final_exam"
+              placeholder="Final Exam Grade(%)"
+              required
+            />
+            <label for="final_exam">Final Exam Grade(%)</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="number"
+              class="form-control"
+              id="final_exam_weight"
+              name="final_exam_weight"
+              placeholder="Weight"
+              required
+            />
+            <label for="final_exam_weight">Weight (%)</label>
+          </div>
+        </div>
+
+        <div class="result-container">
+          <div class="form-floating" id="insertNumLoc">
+            <p>Your Final Grade</p>
+          </div>
+          <div class="form-floating" id="insertLetterLoc">
+            <p>Your Letter Grade</p>
+          </div>
+        </div>
+
+        <button type="button" id="calcBtn" class="btn btn-primary btn-lg">
+          Calculate
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
