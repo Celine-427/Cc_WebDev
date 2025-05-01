@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doggo Dreams</title>
+  <link rel="stylesheet" href="final-styles.css"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Doggo Dreams Logo" />
+      <h2>Doggo Dreams</h2>
+    </div>
+  </header>
+
+<!-- side-nav -->
+  <ul class="side-nav">
+    <li id="introBtn" class="active">
+      <span class="nav-text">Intro</span>
+      <span class="nav-full">Introduction</span>
+    </li>
+    <li id="homeBtn">
+      <span class="nav-text">Home</span>
+      <span class="nav-full">Home Page</span>
+    </li>
+    <li id="breedsBtn">
+      <span class="nav-text">Breeds</span>
+      <span class="nav-full">Dog Breeds</span>
+    </li>
+    <li id="careBtn">
+      <span class="nav-text">Tips</span>
+      <span class="nav-full">Care Tips</span>
+    </li>
+    <li id="aboutBtn">
+      <span class="nav-text">About</span>
+      <span class="nav-full">About Us</span>
+    </li>
+    <li id="connectBtn">
+      <span class="nav-text">Connect</span>
+      <span class="nav-full">Connect with Us</span>
+    </li>
+  </ul>
+
+  <!-- intro video -->
+  <section id="intro" class="section">
+    <video class="video-bg" autoplay muted loop playsinline>
+      <source src="https://files.catbox.moe/p5q2my.MOV" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <h1 class="title">Doggo Dreams</h1>
+      <p id="typing-text" class="typing-text"></p>
+      <button id="exploreBtn" class="enter-btn">Explore Site</button>
+    </div>
+  </section>
+
+  
+  <section id="home" class="section">
+    <h2>Welcome to Doggo Dreams</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for a dog breed..." />
+      <button>Search</button>
+    </div>
+
+    <div class="home-container">
+      <div class="home-image">
+        <img src="./img/happydog.jpg" alt="Happy Dog" />
+      </div>
+      <div class="home-text">
+        <h2>Find Your Perfect Furry Friend!</h2>
+        <p>
+          Welcome to Doggo Dreams, where every dog deserves a loving home.
+          Browse different breeds, learn about care tips, and join us in
+          making every pup's dream come true!
+        </p>
+      </div>
+    </div>
+
+    <section class="pet-card-container">
+      <div class="info-card">
+        <img src="./img/dachshund.jpg" alt="Dog Breed: Dashshundr" />
+        <h3>Dashshundr</h3>
+        <p>Friendly, tolerant, and perfect for families!</p>
+        <button>More info</button>
+      </div>
+
+      <div class="info-card">
+        <img src="./img/bernedoodle.jpg" alt="Dog Breed: Bernedoodle" />
+        <h3>Bernedoodle</h3>
+        <p>Intelligent, elegant, and easy to train.</p>
+        <button>More info</button>
+      </div>
+
+      <div class="info-card">
+        <img src="./img/schnauzer.jpg" alt="Dog Breed: Schnauzer" />
+        <h3>Schnauzer</h3>
+        <p>Playful, smart, and extremely adorable!</p>
+        <button>More info</button>
+      </div>
+    </section>
+  </section>
+
+  
+  <section id="breeds" class="section">
+    <h2>Explore Various Dog Breeds</h2>
+    <div class="breeds-container">
+      <div class="breed-card">
+        <img src="./img/bernedoodle.jpg" alt="Breed 1" />
+        <h3>Bernedoodle</h3>
+        <p>four-month-old, male, fully vaccinated, lively personality</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/West Highland.jpg" alt="Breed 2" />
+        <h3>West Highland</h3>
+        <p>three-month-old, female, fully vaccinated, gentle temperament</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/dachshund.jpg" alt="Breed 3" />
+        <h3>dachshund</h3>
+        <p>three-month-old, male, fully vaccinated, gentle temperament</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/ShihTzu.jpg" alt="Breed 4" />
+        <h3>ShihTzu</h3>
+        <p>three-month-old, female, fully vaccinated, lively personality</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/schnauzer.jpg" alt="Breed 5" />
+        <h3>Schnauzer</h3>
+        <p>three-month-old, male, fully vaccinated, gentle temperament</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/Yorkshire Terrier.jpg" alt="Breed 6" />
+        <h3>Yorkshier</h3>
+        <p>three-month-old, male, fully vaccinated, lively personality</p>
+      </div>
+      <!-- new dog card -->
+      <div class="breed-card">
+        <img src="./img/Maltese.jpg" alt="Breed 6" />
+        <h3>Maltese</h3>
+        <p>two-month-old, male, fully vaccinated, lively personality</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/Samoyed.jpg" alt="Breed 6" />
+        <h3>Samoyed</h3>
+        <p>three-month-old, female, fully vaccinated, Calm</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/Border-Collie.jpg" alt="Breed 6" />
+        <h3>Border-Collie</h3>
+        <p>four-month-old, male, fully vaccinated, lively personality</p>
+      </div>
+
+      <div class="breed-card">
+        <img src="./img/German-shepherd.jpg" alt="Breed 6" />
+        <h3>German-shepherd</h3>
+        <p>three-month-old, female, fully vaccinated, lively personality</p>
+      </div>
+    </div>
+    
+    <!-- dog wish board-->
+    <div class="wish-board">
+      <h3>Dog Wish Board</h3>
+      <p>Tell us about your dream dog and we'll help you find the perfect match!</p>
+      <form id="wishForm" class="wish-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="breed">Breed</label>
+            <input type="text" id="breed" name="breed" placeholder="e.g., Bernedoodle">
+          </div>
+          <div class="form-group">
+            <label for="primaryColor">Primary Color</label>
+            <input type="text" id="primaryColor" name="primaryColor" placeholder="e.g., Brown">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="secondaryColor">Secondary Color</label>
+            <input type="text" id="secondaryColor" name="secondaryColor" placeholder="e.g., White">
+          </div>
+          <div class="form-group">
+            <label for="age">Preferred Age</label>
+            <select id="age" name="age">
+              <option value="">Select Age</option>
+              <option value="1-3 months">1-3 months</option>
+              <option value="4-6 months">4-6 months</option>
+              <option value="7-12 months">7-12 months</option>
+              <option value="1-2 years">1-2 years</option>
+              <option value="3+ years">3+ years</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="maxWeight">Maximum Weight</label>
+            <select id="maxWeight" name="maxWeight">
+              <option value="">Select Weight</option>
+              <option value="< 5 lbs">Small (< 5 lbs)</option>
+              <option value="5-15 lbs">Medium (5-15 lbs)</option>
+              <option value="16-40 lbs">Large (16-40 lbs)</option>
+              <option value="40+ lbs">Extra Large (40+ lbs)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="temperament">Temperament</label>
+            <select id="temperament" name="temperament">
+              <option value="">Select Temperament</option>
+              <option value="Active">Active</option>
+              <option value="Calm">Calm</option>
+              <option value="Friendly">Friendly</option>
+              <option value="Playful">Playful</option>
+              <option value="Protective">Protective</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="additionalInfo">Additional Information</label>
+            <textarea id="additionalInfo" name="additionalInfo" placeholder="Any other preferences or requirements?"></textarea>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit">Submit Wish 🐶</button>
+        </div>
+      </form>
+      <div id="notesArea"></div>
+    </div>
+  </section>
+
+  
+
+  <section id="care" class="section">
+    <h2>Pet Care Tips</h2>
+    <div class="care-section">
+      <img src="./img/caretipdog.jpg" alt="Care tips" />
+      <div class="care-text">
+        <p>
+            When a dog first arrives at home, 
+            it is recommended to keep them in a 
+            crate to make future training easier.
+            <br>
+            <br>
+            It is normal for a dog to bark randomly.
+            If that happens, you can place a cloth over the crate.
+            <br>
+            <br>
+            If the puppy has not been dewormed yet, 
+            it is best to avoid taking them outside to
+             prevent bacterial infections.
+            <br>
+            <br>
+            Puppies are prone to catching a chill.
+             It is advised to wait for about a week 
+             and ensure they are healthy before bathing them.
+            <br>
+            <br>
+            Dogs need monthly internal and external deworming treatments.
+            <br>
+            <br>
+            Before the puppy arrives, make sure to have puppy food ready
+             (a dog daily food intake is typically 2.5% to 4% of its body weight).
+            <br>
+            <br>
+            The golden period for dog training is within their first year.
+            <br>
+            <br>
+            It is important to prepare puppy pads, bowls, a dog bed, and 
+            other essentials in advance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="section">
+    <h2>About Doggo Dreams</h2>
+    <div class="about-section">
+      <div class="about-text">
+        <p>
+        We are a group of dog lovers committed to helping every dog 
+        find a warm and loving home. 
+        <br>
+        <br>
+        Our website was established in 2025, and we pride ourselves 
+        on having exceptionally good-looking dogs. 
+        <br>
+        <br>
+        The parents of our puppies are imported from various countries, 
+        ensuring diverse and high-quality bloodlines. 
+        <br>
+        <br>
+        We also offer after-sales support for every dog we place in a new home.
+        <br>
+        <br>
+        We will continuously introduce different dog breeds, so please stay tuned!
+        </p>
+      </div>
+
+      <div class="about-images">
+        <img src="./img/Teamphoto.JPG" alt="Team Photo" />
+        <img src="./img/dogggg.jpg" alt="Dog Group Photo" />
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="connect" class="section">
+    <h2>Connect with Us</h2>
+    <p>
+      Feel free to reach out to us anytime or follow us on social media 
+      to share your moments with your dog!
+    </p>
+
+    <div class="contact-info">
+      <p>Email: contact@doggodreams.com</p>
+      <p>Phone: +86 123 4567 8901</p>
+      <p>Address: 123 Doggy Street, Pet City, USA</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Doggo Dreams</p>
+    <div class="social-media">
+      <a href="#">Redbook</a>
+      <a href="#">WeChat</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+<!-- GSAP & ScrollTo -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      gsap.from('body', 1, {opacity: 0});
+      gsap.to('.side-nav', 1, {right: 0, delay: 0.5});
+      
+      const sections = document.querySelectorAll('.section');
+      
+      const introBtn = document.getElementById('introBtn');
+      const homeBtn = document.getElementById('homeBtn');
+      const breedsBtn = document.getElementById('breedsBtn');
+      const careBtn = document.getElementById('careBtn');
+      const aboutBtn = document.getElementById('aboutBtn');
+      const connectBtn = document.getElementById('connectBtn');
+      
+      const navButtonsArray = [introBtn, homeBtn, breedsBtn, careBtn, aboutBtn, connectBtn];
+      
+      introBtn.setAttribute('data-scrollpos', document.getElementById('intro').offsetTop);
+      homeBtn.setAttribute('data-scrollpos', document.getElementById('home').offsetTop);
+      breedsBtn.setAttribute('data-scrollpos', document.getElementById('breeds').offsetTop);
+      careBtn.setAttribute('data-scrollpos', document.getElementById('care').offsetTop);
+      aboutBtn.setAttribute('data-scrollpos', document.getElementById('about').offsetTop);
+      connectBtn.setAttribute('data-scrollpos', document.getElementById('connect').offsetTop);
+      
+      const sideNav = document.querySelector('.side-nav');
+      
+      sideNav.addEventListener('mouseenter', function() {
+        gsap.to(this, {
+          width: '200px',
+          duration: 0.4,
+          ease: "power2.out"
+        });
+
+        const navItems = this.querySelectorAll('li');
+        navItems.forEach(item => {
+          const navText = item.querySelector('.nav-text');
+          const navFull = item.querySelector('.nav-full');
+          
+          gsap.to(navText, {
+            opacity: 0,
+            display: 'none',
+            duration: 0.2
+          });
+          
+          gsap.to(navFull, {
+            display: 'block',
+            opacity: 1,
+            duration: 0.3,
+            delay: 0.1
+          });
+        });
+      });
+      
+    
+      sideNav.addEventListener('mouseleave', function() {
+        gsap.to(this, {
+          width: '70px',
+          duration: 0.4,
+          ease: "power2.in"
+        });
+        
+        const navItems = this.querySelectorAll('li');
+        navItems.forEach(item => {
+          const navText = item.querySelector('.nav-text');
+          const navFull = item.querySelector('.nav-full');
+          
+          gsap.to(navFull, {
+            opacity: 0,
+            duration: 0.2,
+            onComplete: () => {
+              gsap.set(navFull, { display: 'none' });
+            }
+          });
+          
+          gsap.to(navText, {
+            display: 'block',
+            opacity: 1,
+            duration: 0.3
+          });
+        });
+      });
+      
+      navButtonsArray.forEach(button => {
+        button.addEventListener('click', function() {
+          navButtonsArray.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          const scrollPos = this.getAttribute('data-scrollpos');
+          gsap.to(window, {
+            scrollTo: {
+              y: parseInt(scrollPos) - 20, 
+              autoKill: false
+            },
+            duration: 1.5,
+            ease: "power2.out"
+          });
+        });
+      });
+    
+      document.getElementById('exploreBtn').addEventListener('click', function() {
+        gsap.to(this, {scale: 0.9, duration: 0.1, onComplete: () => {
+          gsap.to(this, {scale: 1, duration: 0.3});
+        }});
+        const homePos = homeBtn.getAttribute('data-scrollpos');
+        gsap.to(window, {
+          scrollTo: {
+            y: parseInt(homePos) - 20, 
+            autoKill: false
+          },
+          duration: 1.5,
+          ease: "power2.out",
+          onComplete: () => {
+            navButtonsArray.forEach(btn => btn.classList.remove('active'));
+            homeBtn.classList.add('active');
+          }
+        });
+      });
+
+
+      window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          
+          if (scrollPosition >= sectionTop - 200 && 
+              scrollPosition < sectionTop + sectionHeight - 200) {
+
+            navButtonsArray.forEach(btn => btn.classList.remove('active'));
+            
+            const buttonId = section.id + 'Btn';
+            const activeButton = document.getElementById(buttonId);
+            if (activeButton) {
+              activeButton.classList.add('active');
+            }
+          }
+        });
+      });
+      // elevetor end
+      
+      // Wish board
+      const wishForm = document.getElementById('wishForm');
+      const notesArea = document.getElementById('notesArea');
+      
+      wishForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const breed = document.getElementById('breed').value.trim();
+        const primaryColor = document.getElementById('primaryColor').value.trim();
+        const secondaryColor = document.getElementById('secondaryColor').value.trim();
+        const age = document.getElementById('age').value;
+        const maxWeight = document.getElementById('maxWeight').value;
+        const temperament = document.getElementById('temperament').value;
+        const additionalInfo = document.getElementById('additionalInfo').value.trim();
+        if (breed === '') {
+          alert('Please enter at least the breed you are looking for!');
+          return;
+        }
+        const note = document.createElement('div');
+        note.className = 'wish-note';
+        const currentDate = new Date().toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric'
+        });
+        
+        note.innerHTML = `
+          <h4>Dream Dog Wish - ${currentDate}</h4>
+          <div class="wish-note-details">
+            <p><strong>Breed:</strong> ${breed || 'Not specified'}</p>
+            <p><strong>Primary Color:</strong> ${primaryColor || 'Not specified'}</p>
+            <p><strong>Secondary Color:</strong> ${secondaryColor || 'Not specified'}</p>
+            <p><strong>Age Preference:</strong> ${age || 'Any'}</p>
+            <p><strong>Size Preference:</strong> ${maxWeight || 'Any'}</p>
+            <p><strong>Temperament:</strong> ${temperament || 'Any'}</p>
+          </div>
+          ${additionalInfo ? `<p class="wish-note-additional"> Little note: ${additionalInfo}</p>` : ''}
+        `;
+        
+        notesArea.prepend(note);
+        gsap.to(wishForm.querySelector('button'), {
+          backgroundColor: '#c495a0',
+          scale: 1.1,
+          duration: 0.2,
+          onComplete: () => {
+            gsap.to(wishForm.querySelector('button'), {
+              backgroundColor: '#f2c7d5',
+              scale: 1,
+              duration: 0.3
+            });
+          }
+        });
+        const formInputs = wishForm.querySelectorAll('input, select, textarea');
+        gsap.to(formInputs, {
+          backgroundColor: '#f8f8f8', 
+          duration: 0.3,
+          stagger: 0.05,
+          onComplete: () => {
+            wishForm.reset();
+            gsap.to(formInputs, {
+              backgroundColor: 'white',
+              duration: 0.5
+            });
+          }
+        });
+        gsap.fromTo(note, 
+          { 
+            opacity: 0, 
+            y: 30
+          },
+          { 
+            opacity: 1, 
+            y: 0, 
+            duration: 0.6, 
+            ease: "back.out(1.4)" 
+          }
+        );
+      });
+      
+      const styleElement = document.createElement('style');
+      styleElement.textContent = `
+        /* Any custom styles that are still needed can go here */
+      `;
+      document.head.appendChild(styleElement);
+    });
+
+      //text typing
+    const typingText = document.getElementById('typing-text');
+    const message = "Every dog deserves a loving home...";
+    let index = 0;
+
+    function typeWriter() {
+      if (index < message.length) {
+        typingText.textContent += message.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100); 
+      }
+    }
+    typeWriter();
+  </script>
+
+   
+  <script>
+    //cuteeee mouse
+    document.addEventListener('DOMContentLoaded', function() {
+      const pawCursor = document.createElement('div');
+      pawCursor.className = 'paw-cursor';
+      pawCursor.innerHTML = '<img src="./img/paw_cursor.png" alt="Dog Paw">';
+      document.body.appendChild(pawCursor);
+
+      const emojiContainer = document.createElement('div');
+      emojiContainer.className = 'emoji-container';
+      document.body.appendChild(emojiContainer);
+      
+      const clearButton = document.createElement('button');
+      clearButton.className = 'clear-emojis-btn';
+      clearButton.textContent = 'clear emoji';
+      clearButton.style.display = 'none'; 
+      document.body.appendChild(clearButton);
+      
+  
+      clearButton.addEventListener('click', function() {
+        emojiContainer.innerHTML = ''; 
+        this.style.display = 'none'; 
+      });
+
+      let mouseX = 0;
+      let mouseY = 0;
+      let pawX = 0;
+      let pawY = 0;
+      const speed = 0.15; 
+
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        const rotation = Math.random() * 40 - 20; 
+        pawCursor.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+      });
+      
+      document.addEventListener('mousedown', function() {
+        pawCursor.classList.add('paw-active');
+      });
+      
+      document.addEventListener('mouseup', function() {
+        pawCursor.classList.remove('paw-active');
+      });
+
+      document.addEventListener('click', function(e) {
+        if (e.target === clearButton) return;
+        
+        createDogEmoji(e.clientX, e.clientY);
+        clearButton.style.display = 'block';
+      });
+
+      function animatePaw() {
+        const distX = mouseX - pawX;
+        const distY = mouseY - pawY;
+        pawX += distX * speed;
+        pawY += distY * speed;
+        
+        pawCursor.style.left = pawX + 'px';
+        pawCursor.style.top = pawY + 'px';
+        
+
+      requestAnimationFrame(animatePaw);
+      }
+      animatePaw();
+
+
+      function createDogEmoji(x, y) {
+
+        const dogEmojis = ['🐕', '🐶', '🦮', '🐩', '🐕‍🦺', '🦴', '🐾'];
+        
+ 
+        const randomEmoji = dogEmojis[Math.floor(Math.random() * dogEmojis.length)];
+        
+
+        const emoji = document.createElement('div');
+        emoji.className = 'dog-emoji';
+        emoji.textContent = randomEmoji;
+        
+
+        emoji.style.left = x + 'px';
+        emoji.style.top = y + 'px';
+        
+
+        const randomRotation = Math.random() * 60 - 30;
+        
+
+        emojiContainer.appendChild(emoji);
+        
+
+        setTimeout(() => {
+          emoji.style.transform = `translate(${Math.random()*60-30}px, ${Math.random()*60-30}px) scale(1) rotate(${randomRotation}deg)`;
+        }, 50);
+        
+        emoji.addEventListener('mouseenter', function() {
+          this.classList.add('emoji-hover');
+        });
+        
+        emoji.addEventListener('mouseleave', function() {
+          this.classList.remove('emoji-hover');
+        });
+      }
+    });
+  </script>
+
+</body>
+</html> 
